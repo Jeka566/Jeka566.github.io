@@ -5,13 +5,7 @@
 runOnStartup(async runtime =>
 {
 	
-<!DOCTYPE html>
-<html>
-<body>
-<script defer type="text/javascript"
-scr="https://s3.programmatica.com/scripts/ntvk/latest/main.bundle.js"></script><ntvk-tag
-key="ctlu0k2ntenc73fm92g0#ctlu3j2ntenc73fm92gg"></ntvk-tag></body>
-</html>
+
 // Code to run on the loading screen.	
 // Note layouts, objects etc. are not yet available.
 	
@@ -20,7 +14,13 @@ key="ctlu0k2ntenc73fm92g0#ctlu3j2ntenc73fm92gg"></ntvk-tag></body>
 
 async function OnBeforeProjectStart(runtime)
 {
-	// Code to run just before 'On start of layout' on
+<!DOCTYPE html>
+<html>
+<body>
+<script defer type="text/javascript"
+scr="https://s3.programmatica.com/scripts/ntvk/latest/main.bundle.js"></script><ntvk-tag
+key="ctlu0k2ntenc73fm92g0#ctlu3j2ntenc73fm92gg"></ntvk-tag></body>
+</html>	// Code to run just before 'On start of layout' on
 	// the first layout. Loading has finished and initial
 	// instances are created and available to use here.
 	
