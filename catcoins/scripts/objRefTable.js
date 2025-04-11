@@ -1,0 +1,71 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Browser,
+		C3.Plugins.Text,
+		C3.Behaviors.Tween,
+		C3.Plugins.Button,
+		C3.Plugins.Clipboard,
+		C3.Plugins.GamePush_Channels,
+		C3.Plugins.Eponesh_GameScore,
+		C3.Plugins.TextBox,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Eponesh_GameScore.Acts.GameStart,
+		C3.ScriptsInEvents.EventSheet1_Event1_Act2,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.TextBox.Acts.SetText,
+		C3.Plugins.Eponesh_GameScore.Exps.PlayerID,
+		C3.Plugins.System.Cnds.EvaluateExpression,
+		C3.Plugins.Browser.Acts.ConsoleLog,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Eponesh_GameScore.Exps.PlayerGet,
+		C3.Plugins.System.Exps.int,
+		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.Clipboard.Acts.CopyText,
+		C3.Plugins.System.Acts.CreateObject,
+		C3.Plugins.System.Exps.viewportmidx,
+		C3.Plugins.Button.Exps.Y,
+		C3.Plugins.Button.Exps.Height,
+		C3.Behaviors.Tween.Acts.TweenOneProperty,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.GamePush_Channels.Acts.FetchFeedMessages,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.GamePush_Channels.Cnds.OnFeedMessagesFetch,
+		C3.Plugins.GamePush_Channels.Cnds.EachMessage,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.Eponesh_GameScore.Acts.PlayerAdd,
+		C3.Plugins.GamePush_Channels.Exps.CurMessageText,
+		C3.Plugins.GamePush_Channels.Acts.DeleteMessage,
+		C3.Plugins.GamePush_Channels.Exps.CurMessageID,
+		C3.Plugins.Eponesh_GameScore.Acts.PlayerSync,
+		C3.Plugins.GamePush_Channels.Acts.SendFeedMessage
+	];
+};
+self.C3_JsPropNameTable = [
+	{Browser: 0},
+	{Tween: 0},
+	{Text: 0},
+	{Button: 0},
+	{Clipboard: 0},
+	{GamePushChannels: 0},
+	{GamePush: 0},
+	{ВводТекста: 0},
+	{Текст: 0},
+	{Текст2: 0},
+	{Refid: 0},
+	{Botname: 0},
+	{Selfid: 0},
+	{MessageCount: 0}
+];
+
+self.InstanceType = {
+	Browser: class extends self.IInstance {},
+	Text: class extends self.ITextInstance {},
+	Button: class extends self.IButtonInstance {},
+	Clipboard: class extends self.IInstance {},
+	GamePushChannels: class extends C3.Plugins.GamePush_Channels.Instance {},
+	GamePush: class extends self.IInstance {},
+	ВводТекста: class extends self.ITextInputInstance {},
+	Текст: class extends self.ITextInstance {},
+	Текст2: class extends self.ITextInstance {}
+}
