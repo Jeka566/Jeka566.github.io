@@ -7,11 +7,6 @@ const scriptsInEvents = {
 
 	},
 
-	async E_menu_Event20_Act1(runtime, localVars)
-	{
-		p_adextra()
-	},
-
 	async Achievements_Event2_Act1(runtime, localVars)
 	{
 		confetti.start(3000)
@@ -179,6 +174,11 @@ const scriptsInEvents = {
 		  spread: 70,
 		  origin: { y: 1.2 }
 		});
+	},
+
+	async E_game_Event9_Act1(runtime, localVars)
+	{
+		p_adextra()
 	}
 };
 

@@ -5213,6 +5213,8 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "klicks",
 		() => "kk",
+		() => 15,
+		() => 0.5,
 		() => 10,
 		() => "achievements",
 		() => 0.3,
@@ -5242,7 +5244,6 @@ self.C3_ExpressionFuncs = [
 		() => 120,
 		() => 2,
 		() => 3,
-		() => 30,
 		() => 133,
 		p => {
 			const n0 = p._GetNode(0);
@@ -5287,7 +5288,6 @@ self.C3_ExpressionFuncs = [
 			return () => ("not enough " + n0.ExpInstVar());
 		},
 		() => 2760901,
-		() => 0.5,
 		() => "выбран",
 		() => "закрыт",
 		() => "не выбран",
